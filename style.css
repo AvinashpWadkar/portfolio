@@ -24,4 +24,23 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
+/**  Layout **/
+
+.container{
+
+max-width: 142rem;
+
+margin: 0  auto;
+
+}
+
+
+/**  Layout End **/
+
 /*base rule end*/
+
+/*Nav bar section*/
+
+
+
+/*Nav bar section end */
