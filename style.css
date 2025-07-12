@@ -1,4 +1,5 @@
 /* base rule*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lilita+One&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -33,6 +34,7 @@ p,li,a {
     text-transform: capitalize;
     color:var(--para-color);
     font-weight: 400;
+    line-height: 1.5;
 
 }
 
@@ -76,7 +78,6 @@ list-style: none;
 .container{
 
 max-width: 142rem;
-
 margin: 0  auto;
 padding: 9.6rem 2.4rem;
 
@@ -91,6 +92,33 @@ padding: 9.6rem 2.4rem;
 .grid-col-two {
 
   grid-template-columns: repeat(2,1fr);
+}
+
+.section-common-heading ,.section-common-subheading{
+
+  text-align: center;
+  
+
+}
+
+.section-common-heading{
+   font-size: 3.5rem;
+   font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--btn-hover-bg-color);
+
+}
+.section-common-subheading{
+
+
+  font-size: 2rem;
+   font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(1, 141, 255);
+
+
 }
 
 /** end Layout **/
@@ -131,7 +159,8 @@ color: var(--bg-color);
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 1.8rem 0;
+padding: 1.8rem 2.4rem;
+
 
 
 & .navbar-logo a p{
@@ -199,8 +228,8 @@ font-weight: 400;
 /* ===========Start Hero Section ================ */
 
 main {
-
-
+height: 85rem;
+position: relative;
 background-image:
  linear-gradient(to right top,
 #1e3b66, 
@@ -248,7 +277,7 @@ background-image:
    }
 
    & .hero-para{
-         font-size: 1.8rem;
+         font-size: 1.4rem;
         text-transform: none;
         letter-spacing: 0.1rem;
         word-spacing: 0.1rem;
@@ -261,13 +290,20 @@ background-image:
         margin-top: 2.5rem;
         padding-top: 2.5rem;
 
+        & .btn-hire{
+
+         background-color: #eb9f12;
+
+        }
+
    }
 
 }
-.section-hero-image figure {
-
-width: 100%;
-height: auto;
+.section-hero-image  {
+  margin: 0 auto;
+& figure{
+width: 50rem;
+height: 50rem;
 background-color: #f5cb8d;
 border-radius: 50%;
 text-align: center;
@@ -279,7 +315,7 @@ transition: all 0.3s ease-in-out ;
  box-shadow: var();
 transform: translate3d();
 box-shadow: var(--image-box-shadow);
-transform: scale(0.8);
+transform: scale(1.09);
 }
 
 & img{
@@ -292,6 +328,94 @@ transform: scale(0.8);
 }
 
 }
+}
+.custom-shape-divider-bottom-1752324104 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1752324104 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 73px;
+}
+
+.custom-shape-divider-bottom-1752324104 .shape-fill {
+    fill: #FFFFFF;
+}
 
 /* ===========End hero Section ================== */
+
+
+/* ===========start About Section ================== */
+
+
+.section-about-image  {
+  margin: 0 auto;
+& figure{
+width: 40rem;
+height: 40rem;
+background-color: #5e0d18;
+border-radius: 10%;
+text-align: center;
+overflow: hidden;
+box-shadow:  rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+transition: all 0.3s ease-in-out ;
+
+&:hover{ 
+box-shadow: var(--image-box-shadow);
+transform: scale(1.09);
+}
+
+& img{
+
+  width: 80%;
+  height: auto;
+  transform: translate(-1rem,5rem);
+  
+ 
+}
+
+}
+}
+
+
+.section-about-content{
+
+& .hero-subtitle{
+
+
+      text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.2rem;
+     color: var(--heading-color);
+     font-weight: 700;
+     margin-bottom: 4rem;
+   }
+
+   & .hero-para{
+         font-size: 1.6rem;
+        text-transform: none;
+        letter-spacing: 0.1rem;
+        word-spacing: 0.1rem;
+        color: var(--para-color)
+
+   }
+   & .about-btn{
+
+    margin-top: 4rem;
+
+   }
+}
+
+
+
+
+/* ===========End About Section ================== */
