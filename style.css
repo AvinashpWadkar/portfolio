@@ -93,6 +93,11 @@ padding: 9.6rem 2.4rem;
 
   grid-template-columns: repeat(2,1fr);
 }
+.grid-col-five{
+
+  grid-template-columns: repeat(5,1fr);
+  
+}
 
 .section-common-heading ,.section-common-subheading{
 
@@ -121,6 +126,8 @@ padding: 9.6rem 2.4rem;
 
 }
 
+
+
 /** end Layout **/
 
 /*======== start moduel/reusable============= */
@@ -140,6 +147,35 @@ color: var(--bg-color);
    }
 
 }
+
+.fa-brands , .fa-solid{
+
+font-size: 5rem;
+letter-spacing: 2.5rem;
+}
+ .fa-square-github{
+
+color: black;
+
+
+}
+
+
+ .fa-envelope{
+
+  color:red;
+}
+.fa-hackerrank,.fa-square-whatsapp{
+
+  color: green;
+}
+.fa-square-instagram{
+
+
+  color:  rgb(252, 48, 82)
+}
+
+
 
 
 /* ======= end module ==============*/
@@ -413,6 +449,13 @@ transform: scale(1.09);
     margin-top: 4rem;
 
    }
+}
+
+.about-btn{
+  width: 80%;
+  height: auto;
+  gap: 2.5rem;
+
 }
 
 
