@@ -634,3 +634,29 @@ color: var(--title-color);
 
 
 /* ===========End Skill Section ================== */
+
+/* ===========Start Project Section ================== */
+
+.section-project .container .grid{
+
+width: 100%;
+height: auto;
+gap: 4rem;
+}
+.project-container{
+
+
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 2rem 2rem;
+border-radius: 10%;
+text-align: center;
+margin: 0 auto;
+line-height: 3rem;
+
+
+}
+
+
+
+
+/* ===========End Project Section ================== */
