@@ -611,7 +611,7 @@ margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(skyblue,rgb(65, 2, 13));
+  background-color: rgb(110, 133, 235);
   border-radius: 50%;
 
   & img{
@@ -625,7 +625,7 @@ margin-bottom: 2rem;
 
 font-weight: 600;
 font-size: 2.5rem;
-color: var(--title-color);
+color: var(--font-color);
 
 
 
